@@ -1,0 +1,36 @@
+<div class="media auction-item">
+  <img class="media-object auction-item-img pull-left"/>
+  <div class="media-body">
+	<div class="col-md-10">
+		{{auction.desc}}
+	</div>
+	<div class="col-md-2">
+		<div>
+    		<b>{{auction.price | currency}}</b>
+		</div>
+		<div>
+			{{bidsCount}} bids
+		</div>
+	</div>
+  </div>
+</div>
+<br/>
+<label>Amount:&nbsp;<input ng-model="amount"></label>
+<input type="button" class="btn btn-primary" ng-click="bid()" value="Bid!"></input>
+
+<table class="table">
+	<thead>
+      <tr>
+        <th>Bidder</th>
+        <th>Bid Amount</th>
+        <th>Bid Time</th>
+      </tr>
+    </thead>
+	<tbody>
+		<tr ng-repeat="bid in auction.bids | orderByPriority | orderBy:sortBy">
+			<td>{{bid.bidder}}</td>
+			<td>{{bid.amount | currency}}</td>
+			<td>{{bid.time | date:'dd MMM, yyyy h:mm:ss.sss'}}</td>
+		</tr>
+	</tbody>
+</table>

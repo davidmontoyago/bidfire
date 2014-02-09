@@ -1,0 +1,20 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.auction-item {
+	border: 1px solid ;
+	border-radius: 4px;
+	border-color: #ddd;
+}
+.auction-item-img {
+	width: 64px; 
+	height: 64px;
+}

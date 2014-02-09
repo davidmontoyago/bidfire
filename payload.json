@@ -1,0 +1,17 @@
+
+{ "auctions" :
+	{
+		"A1" : {
+		    "startPrice" : 100,
+		    "priceIncrement" : 2,
+		    "desc" : "Apple® - iPad® mini Wi-Fi - 16GB - White & Silver",
+			"bids" : []	
+		},
+		"A2" : {
+		    "startPrice" : 10,
+		    "priceIncrement" : 2.5,
+		    "desc" : "1 ton of Copper",
+			"bids" : []
+		}
+	}
+}

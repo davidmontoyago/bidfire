@@ -1,0 +1,18 @@
+<div class="media auction-item" ng-repeat="auction in auctions | orderByPriority">
+  <a class="pull-left" href="#/bid/{{auction.id}}">
+    <img class="media-object auction-item-img"/>
+  </a>
+  <div class="media-body">
+	<div class="col-md-10">
+		<a href="#/bid/{{auction.$id}}">{{auction.desc}}</a>
+	</div>
+	<div class="col-md-2">
+		<div>
+			<b>{{auction.price | currency}}</b>
+		</div>
+		<div>
+			{{auction.bidCount}} bids
+		</div>
+	</div>
+  </div>
+</div>
