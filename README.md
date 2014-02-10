@@ -3,7 +3,7 @@ bidfire
 
 Prototype of a bidding app with Firebase, Angular and AngularFire.
 
-![Screen shot](https://raw.github.com/davidmontoyago/bidfire/ss.png)
+![Screen shot](https://raw2.github.com/davidmontoyago/bidfire/master/ss.png)
 
 ## Stack
 
